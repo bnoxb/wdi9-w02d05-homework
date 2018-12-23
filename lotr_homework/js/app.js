@@ -284,3 +284,4 @@ $(() => {
 
 });
 // homework start
+// Functions to control the hobbits
