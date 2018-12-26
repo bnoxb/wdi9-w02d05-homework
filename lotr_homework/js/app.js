@@ -65,7 +65,7 @@ const makeMiddleEarth = () => {
 
 
 };
-
+// gotta figure out why the background isnt showing up
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 1 complete - Made Middle Earth".
 
