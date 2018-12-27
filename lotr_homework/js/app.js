@@ -65,7 +65,7 @@ const makeMiddleEarth = () => {
 
 
 };
-// gotta figure out why the background isnt showing up
+
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 1 complete - Made Middle Earth".
 
@@ -277,13 +277,13 @@ const weWantsIt = () => {
 // Chapter 13
 // ============
 const thereAndBackAgain = () => {
-
+  $(`#gollum`).remove();
   // 1. remove Gollum and the Ring from the DOM
-
+  const $baddies = $(`#Mordor`).find(`li.baddy`);
   // 2. remove all the baddies from the DOM
-
+  $($baddies).remove();
   // 3. Move all the hobbits back to the shire
-
+  $(`#middle-earth`).find(`li.hobbit`).detach().appendTo(`#The-Shire`);
 };
 
 // COMMIT YOUR WORK
@@ -314,5 +314,3 @@ $(() => {
   $('#13').on('click', thereAndBackAgain);
 
 });
-// homework start
-// Functions to control the hobbits
