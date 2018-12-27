@@ -172,7 +172,8 @@ $($ulShireHobbits).detach().appendTo(`#Rivendell`);
 // Chapter 7
 // ============
 const beautifulStranger = () => {
-
+  const $aragorn = $(`aside`).find(`li`)[3];
+  $($aragorn).text(`Aragorn`);
   // 1. change the buddy 'Strider' textnode to "Aragorn"
 
   // hint: You can get a list of elements by tag name, such as 'aside'
