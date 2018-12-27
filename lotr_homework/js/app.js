@@ -47,7 +47,7 @@ const makeMiddleEarth = () => {
     console.log("Trying to make middle earth.");
 
   // 1. create a section tag with an id of middle-earth
-    const $middleEarth = $('<section id = middle-earth></section>');
+    const $middleEarth = $('<section id="middle-earth"></section>');
   // 2. append the section to the body of the DOM.
     $('body').append($middleEarth);
   // 3. use a for loop to iterate over the lands array that does the following:
@@ -75,9 +75,13 @@ const makeMiddleEarth = () => {
 const makeHobbits = () => {
 
   console.log('Make hobbits');
-
+  const $ulHobbits = $(`<ul/>`);
+  $(`#The-Shire`).append($ulHobbits);
   // 1. display an unordered list of the hobbits in the shire.
-
+  for (i = 0; i<hobbits.length; i++){
+    const $thisHobbit = $(`<li class="hobbit">${hobbits[i]}</li>`);
+    $($ulHobbits).append($thisHobbit);
+  }
   // 2. give each hobbit a class of "hobbit"
 
   // hint: create a 'ul' outside the loop upon which to append the 'li's
